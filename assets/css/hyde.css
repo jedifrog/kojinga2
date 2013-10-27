@@ -1,0 +1,559 @@
+/*
+ __                  __
+/\ \                /\ \
+\ \ \___   __  __   \_\ \     __
+ \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+  \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+   \ \_\ \_\/`____ \ \___,_\ \____\
+    \/_/\/_/`/___/> \/__,_ /\/____/
+               /\___/
+               \/__/
+
+Hyde is an elegant, open source, mobile first theme for Jekyll. It includes
+lightweight styles and placeholder content to get you up and running with a
+simple blog in no time.
+
+Designed, built, and released under MIT license by @mdo.
+
+Learn more at http://andhyde.com or https://github.com/mdo/hyde.
+
+*/
+
+/* Monokai colors
+-------------------------------------------------- */
+
+/*       sundried clay : #272822 rgb(39,40,34)
+ *              orchid : #F92672 rgb(249,38,114)
+ * bounded rationality : #66D9EF rgb(102,217,239)
+ *             henn1nk : #A6E22E rgb(166,226,46)
+ *       pumpkin spice : #FD971F rgb(253,151,31)
+ */
+
+/* Body resets
+-------------------------------------------------- */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #eee;
+  background-color: #121315;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 24px;
+}
+
+h4, h5, h6 {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+li {
+  color: #888580;
+}
+
+hr {
+  position: relative;
+  margin: 40px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+strong {
+  color: #fefefe;
+}
+
+abbr {
+  background-color: #eee;
+  display: inline-block;
+  padding: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+/* Code highlighting
+-------------------------------------------------- */
+
+table.highlighttable {
+  font-size: 14px;
+  padding: 0;
+  border-radius: 3px;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #f06;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1),
+  0px 1px 5px 0px rgba(0, 0, 0, 0.8) inset;
+  /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5), 
+  0px 1px 0px rgba(255, 255, 255, 0.1), 
+  0px -1px 0px rgba(0, 0, 0, 0.4);*/
+}
+
+td.linenos {
+  background: #191919;
+  color: #75715e;
+  width: 36px;
+  padding-left: 12px;
+}
+
+td.code {
+  background: #111;
+  margin-right: 16px;
+  padding: 0 10px;
+}
+
+code, pre {
+  padding: 0 3px 2px;
+  font-family: "Inconsolata", Menlo, Monaco, monospace;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+code {
+  padding: 2px 4px;
+  color: #f92672;
+  background-color: #191919;
+  border: 1px solid #111;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1),
+  0px 1px 5px 0px rgba(0, 0, 0, 0.8) inset;
+}
+
+/*pre {
+   counter-reset: line-numbering;
+   display: block;
+   margin: 0 0 0;
+   padding: 0 20px 0 0;
+   line-height: 18px;
+   white-space: pre;
+   white-space: pre-wrap;
+   word-break: break-all;
+   word-wrap: break-word;
+   background-color: #191919;
+}*/
+
+/* adjust this to fit style !!!!!!!! */
+
+/*pre a::before {
+   content: counter(line-numbering);
+   counter-increment: line-numbering;
+   padding-right: 1em;
+   width: 25px;
+   text-align: right;
+   opacity: 0.7;
+   display: inline-block;
+   color: #75715e;
+   background: #111;
+   margin-right: 16px;
+   padding: 2px 10px;
+   font-size: 13px;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+pre a:first-of-type::before {
+   padding-top: 10px;
+}
+
+pre a:last-of-type::before {
+   padding-bottom: 10px;
+}
+
+pre a:only-of-type::before {
+   padding: 10px;
+}*/
+
+/* !!!!!!!!!!!!!! to here */
+
+/*pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}*/
+/*
+pre span.lineno {
+  color: #75715e;
+}
+*/
+/* >>>>>>>>>>>> turn off highlight temporarily to make linenos fit in */
+
+/*.highlight {
+  margin-bottom: 15px;
+  padding: 1px;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.3), 
+  0px 1px 0px rgba(255, 255, 255, 0.1), 
+  0px -1px 0px rgba(0, 0, 0, 0.4);
+}*/
+
+/* x y blur color
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Quotes
+-------------------------------------------------- */
+
+blockquote {
+  padding: 0 0 0 20px;
+  margin: 15px 30px 15px 0;
+  border-left: 5px solid #75715e;
+}
+blockquote p {
+  margin-bottom: 0;
+  color: #999;
+  text-indent: -0.4em;
+}
+blockquote p:before {
+  content: '\201C';
+}
+blockquote p:after {
+  content: '\201D';
+}
+
+img {
+  display: block;
+  margin: 0 0 15px;
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Links
+-------------------------------------------------- */
+
+a {
+  font-weight: 600;
+  color: #a6e22e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Alignments
+-------------------------------------------------- */
+
+.left-5 { display: inline-block; line-height: 1; margin-left: 5px; }
+.left-10 { display: inline-block; line-height: 1; margin-left: 10px; }
+.left-15 { display: inline-block; line-height: 1; margin-left: 15px; }
+.left-20 { display: inline-block; line-height: 1; margin-left: 20px; }
+.left-25 { display: inline-block; line-height: 1; margin-left: 25px; }
+
+.right-5 { display: inline-block; line-height: 1; margin-right: 5px; }
+.right-10 { display: inline-block; line-height: 1; margin-right: 10px; }
+.right-15 { display: inline-block; line-height: 1; margin-right: 15px; }
+.right-20 { display: inline-block; line-height: 1; margin-right: 20px; }
+.right-25 { display: inline-block; line-height: 1; margin-right: 25px; }
+
+.step-10 { display: inline-block; line-height: 1; width: 10%; }
+.step-15 { display: inline-block; line-height: 1; width: 15%; }
+.step-20 { display: inline-block; line-height: 1; width: 20%; }
+.step-25 { display: inline-block; line-height: 1; width: 25%; }
+.step-33 { display: inline-block; line-height: 1; width: 33%; }
+.step-40 { display: inline-block; line-height: 1; width: 40%; }
+.step-50 { display: inline-block; line-height: 1; width: 50%; }
+.step-60 { display: inline-block; line-height: 1; width: 60%; }
+.step-75 { display: inline-block; line-height: 1; width: 75%; }
+.step-80 { display: inline-block; line-height: 1; width: 80%; }
+.step-90 { display: inline-block; line-height: 1; width: 90%; }
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+/* Scaffolding
+-------------------------------------------------- */
+
+/* Header */
+.masthead {
+  color: #ccc;
+  background-color: #191919;
+}
+.masthead-inner {
+  padding: 20px;
+}
+.masthead h1 {
+  margin-top: 0;
+  font-family: "Inconsolata";
+}
+.masthead .lead {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.masthead a {
+  color: #efefef;
+}
+
+/* Footer area of masthead */
+.colophon {
+  margin-top: 20px;
+  color: #444;
+}
+.colophon-links {
+  margin: 0 0 15px;
+  list-style: none;
+}
+
+
+/* Posts
+-------------------------------------------------- */
+
+/* Wrapper for all posts on homepage */
+/*.posts {
+  margin-left:  20px;
+  margin-right: 20px;
+}*/
+
+/* Single post */
+.post {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page {
+  margin: 40px 20px 40px 20px; 
+}
+
+.related {
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+
+.post-meta {
+  display: block;
+  margin: -10px 0 10px;
+  color: #9a9a9a;
+}
+
+.meta-date, .meta-tags {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+/* Pagination
+-------------------------------------------------- */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-top: 40px;
+  font-weight: bold;
+  color: #a6e22e;
+  text-align: center;
+  border-top: 1px solid #eee;
+  background-color: #111;
+}
+.pagination a,
+.pagination span {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+.pagination a:first-child,
+.pagination span:first-child {
+  border-right: 1px solid #191919;
+}
+.pagination a:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+
+/* Responsive
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .masthead-inner {
+    padding: 40px;
+  }
+  
+  /*.posts {
+    margin-left: 40px;
+    margin-right: 40px;
+  }*/
+  .post {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .page {
+    margin: 40px;
+  }  
+  .related {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 990px) {
+
+  body {
+    font-size: 18px;
+  }
+  .masthead h1 {
+    font-size: 64px;
+  }
+
+  /* Center container in available real estate */
+  .container {
+    margin-left: 35%;
+    margin-right: 10%;
+    width: 55%;
+  }
+
+  /* Fix the masthead to the side for impact and awesomeness */
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .masthead-inner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .masthead .lead {
+    font-size: 24px;
+  }
+
+.logo {
+   background-color: #121315;
+   width: 100%;
+   height: 60px;
+   margin-bottom: 40px;
+   border-radius: 3px;
+}
+
+  .colophon {
+    margin-top: 40px;
+  }
+
+  /* Remove mobile device padding from list of posts */
+  /*.posts {
+    margin-left: 0;
+    margin-right: 0;
+  }*/
+  /* Increase space between posts */
+  .post, .page {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .page {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .post {
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+  
+  .related {
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+
+  /* Make pagination stand alone */
+  .pagination {
+    margin-bottom: 60px;
+    border: 1px solid #191919;
+  }
+
+}
+
+/* Custom Elements
+-------------------------------------------------- */
+
+.social {
+   color: #369;
+   font-weight: normal;
+}
+
+.social:hover {
+   color: #a6e22e;
+   text-decoration: none;
+}
+
+.title:hover {
+   text-decoration: none;
+}
+
+.ascii {
+   font-size: 14px;
+   line-height: 16px;
+   /*background-color: #121315;*/
+   color: #eee;
+}
+
+a.tag {
+  color: inherit;
+  font-weight: normal;
+}

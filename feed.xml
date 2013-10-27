@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Kojinga</title>
+    <subtitle>subtitle</subtitle>
+    <link rel="alternate" href="http://kojinga.com/" />
+    <link rel="self" href="http://kojinga.com/feed.xml" type="application/atom+xml" />
+    <id>http://kojinga.com/</id>
+    <updated>2013-10-27T06:17:58Z</updated>
+    
+    <author>
+        <name>Sjaak</name>
+        <email>sjaak@kojina.com</email>
+        <uri>http://kojinga.com/</uri>
+    </author>
+    
+    
+        <entry>
+            <title>It works!</title>
+            <link rel="alternate" href="http://kojinga.com/2050/01/01/it-works/" type="text/html" />
+            <id>http://kojinga.com/2050/01/01/it-works/</id>
+            <updated>2050-01-01T04:42:00Z</updated>
+            
+            
+            <content type="html">&lt;h1&gt;Lorem Ipsum&lt;/h1&gt;&lt;pre&gt;&lt;code data-lang=&#34;html&#34;&gt;&amp;lt;div class=&amp;quot;something&amp;quot;&amp;gt;
+  &amp;lt;img src=&amp;quot;#&amp;quot; title=&amp;quot;something&amp;quot; &amp;#47;&amp;gt;
+  &amp;lt;h1&amp;gt;something&amp;lt;&amp;#47;h1&amp;gt;
+  &amp;lt;p&amp;gt;lorem ipsum dolor sit amet&amp;lt;&amp;#47;p&amp;gt;
+&amp;lt;&amp;#47;div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lorem &lt;code&gt;ipsum&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;this&lt;/li&gt;
+&lt;li&gt;is a&lt;/li&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        <entry>
+            <title>This one works as well...</title>
+            <link rel="alternate" href="http://kojinga.com/2040/01/01/this-one-works-as-well/" type="text/html" />
+            <id>http://kojinga.com/2040/01/01/this-one-works-as-well/</id>
+            <updated>2040-01-01T03:36:00Z</updated>
+            
+            <summary type="html">Lorem ipsum dolor sit amet. This is a &lt;em&gt;test&lt;/em&gt; page to see if the frontpage will display multiple posts with their contents on the front page. Let&amp;#39;s see if block quotes work correctly:</summary>
+            <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet. This is a &lt;em&gt;test&lt;/em&gt; page to see if the frontpage will display multiple posts with their contents on the front page. Let&amp;#39;s see if block quotes work correctly:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Oh my gosh. This is a block quote.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;No way dude.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Oh way. And it&amp;#39;s nested too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://placehold.it/1500x600&#34; alt=&#34;Img test&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Link test&lt;/a&gt;&lt;/p&gt;
+</content>
+        </entry>
+    
+</feed>
