@@ -2,22 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Kojinga</title>
     <subtitle>subtitle</subtitle>
-    <link rel="alternate" href="http://kojinga.com/" />
-    <link rel="self" href="http://kojinga.com/feed.xml" type="application/atom+xml" />
-    <id>http://kojinga.com/</id>
-    <updated>2013-10-27T13:15:18Z</updated>
+    <link rel="alternate" href="http://jedifrog.github.io/kojinga2/" />
+    <link rel="self" href="http://jedifrog.github.io/kojinga2/feed.xml" type="application/atom+xml" />
+    <id>http://jedifrog.github.io/kojinga2/</id>
+    <updated>2013-10-27T13:19:47Z</updated>
     
     <author>
         <name>Sjaak</name>
         <email>sjaak@kojina.com</email>
-        <uri>http://kojinga.com/</uri>
+        <uri>http://jedifrog.github.io/kojinga2/</uri>
     </author>
     
     
         <entry>
             <title>It works!</title>
-            <link rel="alternate" href="http://kojinga.com/2050/01/01/it-works/" type="text/html" />
-            <id>http://kojinga.com/2050/01/01/it-works/</id>
+            <link rel="alternate" href="http://jedifrog.github.io/kojinga2/2050/01/01/it-works/" type="text/html" />
+            <id>http://jedifrog.github.io/kojinga2/2050/01/01/it-works/</id>
             <updated>2050-01-01T13:10:00Z</updated>
             
             <summary type="html">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Set ut massa mattis, tincidunt lacus et, pellentesque mi. Nullam consectetur quam tempor, condimentum orci vitae, posuere mulla. Integer non est in mauris pellentesque porttitor. Ut id metus sapien. Sed it scelerisque arcu, eu ultrices justo. Duis pretium ornare lorem, elementum volutpat justo feugiat nec. Phasellus laoreet metus at nisi venenatis, eu molestie est tempus. Integer vitae viverra arcu. Proin convallis mi augue, vitae interdum nulla accumsan quis.</summary>
@@ -42,8 +42,8 @@
     
         <entry>
             <title>This one works as well...</title>
-            <link rel="alternate" href="http://kojinga.com/2040/01/01/this-one-works-as-well/" type="text/html" />
-            <id>http://kojinga.com/2040/01/01/this-one-works-as-well/</id>
+            <link rel="alternate" href="http://jedifrog.github.io/kojinga2/2040/01/01/this-one-works-as-well/" type="text/html" />
+            <id>http://jedifrog.github.io/kojinga2/2040/01/01/this-one-works-as-well/</id>
             <updated>2040-01-01T03:36:00Z</updated>
             
             <summary type="html">Lorem ipsum dolor sit amet. This is a &lt;em&gt;test&lt;/em&gt; page to see if the frontpage will display multiple posts with their contents on the front page. Let&amp;#39;s see if block quotes work correctly:</summary>
