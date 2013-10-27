@@ -32,7 +32,7 @@ Learn more at http://andhyde.com or https://github.com/mdo/hyde.
 /* Fonts
 -------------------------------------------------- */
 
-@font-face {
+/*@font-face {
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
@@ -69,7 +69,7 @@ Learn more at http://andhyde.com or https://github.com/mdo/hyde.
   font-style: italic;
   font-weight: 400;
   src: local('Open Sans Italic'), local('OpenSans-Italic'), url(/assets/fonts/OpenSans-Italic.woff) format('woff');
-}
+}*/
 
 /* Body resets
 -------------------------------------------------- */
